@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width: 800px) {
+            .all_side_m {
+                width: 30%;
+                height: 50%;
+            }
+            .side_m1 {
+                margin-top: 30px;
+                height: 20%;
+            }
+            .side_m1 table{
+                width: 100%;
+            }
+            .side_m2 {
+                margin-top: 15px;
+                height: 20%
+            }
+            .side_m2 table{
+                width: 100%;
+            }
+            .text {
+                float: left;
+                width: 70%;
+                margin-right: 30px;
+            }
+            body {
+                margin: 0px 30px;
+                display: flex;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 799px) {
+            body {
+                margin: 0px 30px;
+            }
+            .all_side_m {
+                width: 100%;
+                height: 180px;
+                margin-top: 50px;
+            }
+            .side_m1 {
+                width: 47%;
+                margin-right: 6%;
+                float: left;
+            }
+            .side_m1 table{
+                width: 100%;
+            }
+            .side_m2 {
+                width: 47%;
+                float: right;
+            }
+            .side_m2 table{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 599px) {
+            body{
+                padding: 15px;
+            }
+            .all_side_m {
+                width: 100%;
+                height: 300px;
+                margin-top: 50px;
+            }
+            .side_m1 table{
+                width: 100%;
+            }
+            .side_m2{
+                margin-top: 30px;
+            }
+            .side_m2 table{
+                width: 100%;
+            }
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table tr:first-child {
+            background-color: rgb(55, 81, 107);
+            text-align: left;
+            border-bottom: none;
+        }
+        table tr:last-child td {
+            border-radius: 0 0 8px 8px;
+            border-bottom: none;
+        }
+        tr {
+            background-color: rgb(176, 196, 223);
+        }
+        tr>th {
+            border-bottom: solid 1px rgb(151, 171, 198);
+            border-radius: 8px 8px 0 0;
+            color: aliceblue;
+            height: 35px;
+            padding: 0px 20px;
+            text-align: left;
+        }
+        tr>td {
+            border-bottom: solid 1px rgb(151, 171, 198);
+            height: 35px;
+            padding: 0px 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <div>
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae quia earum iure nemo omnis laudantium dignissimos, eligendi veniam asperiores ea incidunt nulla at inventore nostrum, ullam iste, odit tempore id ab ratione fugit magni culpa. Velit esse repellat nobis tempora. Sint eaque ipsa illo explicabo enim sapiente nesciunt. Expedita obcaecati ad delectus dicta labore? Assumenda asperiores, quidem, natus esse blanditiis aspernatur aliquam consequatur consequuntur suscipit inventore ratione saepe porro culpa? Possimus omnis quaerat optio officia amet voluptas, veniam, deserunt repellat nobis cupiditate animi magni dolores ullam atque deleniti sit molestiae consequatur? Reiciendis repellat sunt id ea, commodi delectus nam?</p>
+        </div>
+        <div >
+            <h2>Additional information</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptas cupiditate minus reiciendis id consequatur accusamus. Deleniti, odio unde repellat modi rerum voluptatibus ad eos incidunt ipsum vitae doloribus veniam quibusdam magni eveniet perferendis iusto, velit officiis sint. Architecto culpa dolores quam obcaecati numquam nisi aliquid aspernatur nemo maxime totam, beatae alias modi. Vitae cumque pariatur fuga iure ipsam ipsum, fugiat consequuntur quibusdam nulla eaque! Modi, nulla optio distinctio dicta aliquid necessitatibus nihil asperiores odio doloremque nostrum officiis animi explicabo neque recusandae qui, earum et totam dolores facere expedita? Vitae earum illo iusto quia. Nihil <br><br> minima aspernatur et pariatur sapiente cupiditate sed adipisci ratione rem molestiae, accusantium modi ea a consectetur omnis minus dignissimos necessitatibus, ducimus in! Nesciunt delectus ad, illum eveniet ipsum accusantium perspiciatis ullam rerum reiciendis, assumenda nam cum error optio, dignissimos sint enim culpa. Doloribus officiis officia nulla illo, ut, odit maxime earum voluptatem soluta odio error.</p>
+        </div>
+    </div>
+    <div class="all_side_m">
+        <div class="side_m1">
+            <table>
+                <tr>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum dolor.</td>
+                </tr>
+                <tr>
+                    <td>Libero et quaerat laudantium?</td>
+                </tr>
+            </table>
+        </div>
+        <div class="side_m2">
+            <table>
+                <tr>
+                    <th>Plans</th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

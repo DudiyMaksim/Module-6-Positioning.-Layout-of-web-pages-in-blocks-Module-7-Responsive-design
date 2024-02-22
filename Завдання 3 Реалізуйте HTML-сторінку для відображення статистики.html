@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width: 600px) {
+            .logo{
+            width: 50%;
+            margin: 10px 25%;
+            }
+            .menu{
+                float: left;
+                height: 100vh;
+                width: 10%;
+                background-color: rgb(51, 51, 51);
+            }
+            ul {
+            width: 100%;
+            }
+            ul>li{
+                color: aliceblue;
+                font-size: large;
+                border: solid rgb(41, 41, 41) 1px;
+                padding: 3vh;
+                font-size: 1vw;
+            }
+            .container{
+                background-color: rgb(219, 219, 219);
+                width: 90%;
+                height: 100vh;
+                float: right;
+                padding: 3%;
+                box-sizing: border-box;
+            }
+            .traffic{
+                float: left;
+                margin-top: 30px;
+                width: 48%;
+                height: 47vh;
+                background-color: aliceblue;
+                padding: 35px;
+                box-sizing: border-box;
+            }
+            .traffic>div{
+                width: 100%;
+                text-align: center;
+            }
+            .info1>div>div>img{
+                height: 35vh;
+                width: 22vw;
+            }
+            .loads{
+                margin-top: 30px;
+                width: 48%;
+                float: right;
+                height: 47vh;
+                background-color: aliceblue;
+                padding: 35px;
+                box-sizing: border-box;
+
+            }
+            .loads>div{
+                text-align: center;
+            }
+            .info1{
+                width: 100%;
+                height: 50vh;
+            }
+            .info2{
+                margin-top: 5vh;
+                width: 94%;
+                height: 25%;
+                padding: 3%;
+                background-color: aliceblue;
+            }
+        }
+        @media screen and (max-width: 599px) {
+            .logo{
+                width: 10%;
+            }
+            .menu{
+                text-align: center;
+                height: auto;
+                width: 100%;
+                background-color: rgb(51, 51, 51);
+            }
+            ul>li{
+                text-align: left;
+                padding-left: 30px;
+                color: aliceblue;
+                line-height: 30px;
+                font-size: large;
+                border: solid rgb(41, 41, 41) 1px;
+            }
+            .container{
+                background-color: rgb(219, 219, 219);
+                width: 100%;
+                height: 100%;
+                padding: 7%;
+                box-sizing: border-box;
+            }
+            .traffic{
+                margin-top: 30px;
+                width: 100%;
+                height: 65%;
+                background-color: aliceblue;
+                padding: 35px;
+                box-sizing: border-box;
+            }
+            .traffic>div{
+                width: 100%;
+                text-align: center;
+            }
+            .info1>div>div>img{
+                width: 200px;
+            }
+            .loads{
+                margin-top: 30px;
+                width: 100%;
+                height: 65%;
+                background-color: aliceblue;
+                padding: 35px;
+                box-sizing: border-box;
+
+            }
+            .loads>div{
+                text-align: center;
+            }
+            .info1{
+                width: 100%;
+            }
+            .info2{
+                margin-top: 5vh;
+                width: 94%;
+                height: 25%;
+                padding: 3%;
+                background-color: aliceblue;
+            }
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+        }
+        table{
+            position: relative;
+            margin-top: 10px;
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+        }
+        table>tr>td{
+            width: 2vw;
+        }
+        tr:first-child{
+            font-size: large;
+            font-weight: bold;
+        }
+        tr>td {
+            border-bottom: solid 1px rgb(201, 201, 201);
+            height: 35px;
+            padding: 0px 20px;
+            text-align: left;
+        }
+        tr>td:first-child {
+            width: 5%;   
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <img src=".logo.png" alt="" class="logo">
+        <ul>
+            <li>Lorem.</li>
+            <li>Voluptatum.</li>
+            <li>Laborum.</li>
+            <li>Repellendus?</li>
+            <li>Ea?</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Dashboard - May 25,2019</h1>
+        <div class="info1">
+            <div class="traffic">
+                <p><b>TRAFFIC</b></p>
+                <div>
+                    <img src="./chart1.png" alt="">
+                </div>
+            </div>
+            <div class="loads">
+                <p><b>LOADS</b></p>
+                <div>
+                    <img src="./chart2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="info2">
+            <p"><b>RECENT ACTIVITY</b></p>
+            <table>
+                <tr>
+                    <td>#</td>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Date</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lorem ipsum dolor sit amet consectetur.</td>
+                    <td>Phoebe Vritton</td>
+                    <td>25/05/19</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                    <td>Rosina Clay</td>
+                    <td>25/05/19</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td>Ayush Horn</td>
+                    <td>24/05/19</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>Jillian Carver</td>
+                    <td>23/05/19</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

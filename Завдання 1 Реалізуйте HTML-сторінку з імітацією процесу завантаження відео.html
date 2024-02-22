@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 760px) {
+        .container {
+            flex-direction: column;
+        }
+        .img {
+            width: 80%;
+            height: auto;
+            margin: 20px 10%;
+        }
+        .done {
+            width: 100%;
+        }}
+        @media screen and (min-width: 761px) {
+            .img{
+                height: 100%;
+            }
+            .container {
+                height: 90px;
+            }
+        }
+
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+p {
+    margin: 10px;
+}
+.container {
+    display: flex;
+    width: 90%;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0px 0px 7px rgb(155, 155, 155);
+}
+.loading {
+    margin: 0px 1.5vw;
+    width: 90%;
+    height: 100%;
+}
+.line {
+    display: flex;
+    box-shadow: 0px 0px 2px blue;
+    width: 100%;
+    height: 25px;
+}
+.block1 {
+    display: flex;
+    width: 40%;
+    height: auto;
+    background-color: rgb(207, 214, 226);
+    align-items: center;
+}
+.block2 {
+    width: 60%;
+    height: auto;
+    align-items: center;
+    text-align: right;
+    margin-top: 4px; /*?*!&#*#!, як його вирівняти по цетру по вертикалі*/
+    margin-right: 10px;
+}
+.done {
+    border: none;
+    margin-right: 3%;
+    height: 25px;
+    color: aliceblue;
+    background-color: rgb(71, 71, 255);
+}
+.done:hover {
+    cursor: pointer;
+}
+.text {
+    display: block;
+    padding-bottom: 15px;
+}
+.img {
+    height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./loading.png" alt="" class="img">  
+        <div class="loading">
+            <div class="line">
+                <div class="block1"><span style="margin-left: 10px;">UPLOADING 40%</span></div>
+                <div class="block2">About 23 minutes remaining</div>
+            </div>
+            <div class="text">
+                <p><b>Title of video</b></p>
+                <p>*Your video is still uploading. Please keep this page open untilit`s done.</p>
+            </div>
+        </div>
+        <button class="done"><b>DONE</b></button>
+    </div>
+</body>
+</html>
